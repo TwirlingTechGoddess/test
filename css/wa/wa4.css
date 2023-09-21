@@ -23,6 +23,8 @@ html {
   flex-direction: column;
 }
 
+/* only a monster would make people use "em"s for styling  :-p */
+
 #mine {
   background-color: violet;
 }
