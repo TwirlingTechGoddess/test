@@ -1,0 +1,68 @@
+/* ------------- General styles -------------- */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* ---------- Card container styles --------------*/
+
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+#mine {
+  background-color: violet;
+}
+
+/* ----------- Header/Footer stylez----------- */
+
+.card header {
+  font-size: 12px;
+  padding-left: 10px;
+  height: 25%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+  height: 250%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+/* ------------ Card Content stylez ------------ */
+.card article {
+  background-color: darkred;
+  padding-left: 10px;
+  color: white;
+  line-height: 14px;
+}
+
+#mine article {
+  background-color: purple;
+}
+
+.card article img {
+  height: 120px;
+  float: right;
+}
+
+
+
+
