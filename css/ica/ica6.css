@@ -16,6 +16,8 @@
     height: 297mm;
     margin: 20px auto;
     position: relative;
+    border:#ccc;
+    background-color: white;
   }
   
   address {
@@ -35,7 +37,24 @@
     text-align: center;
     padding: 44px 0;
     color: white;
+
+  /* Your CSS below here */
+
     text-shadow: 1px 1px 1px black;
+    background-image: url("../../ica/img/logo.png");
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px black;
+}
+
+  footer {
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 0%;
+    margin-right: auto;
+    margin-left: auto;
   }
   
-  /* Your CSS below here */
+  article {
+    background-image: linear-gradient(lightgray, white, white, white, lightgray);
+  }
+  
