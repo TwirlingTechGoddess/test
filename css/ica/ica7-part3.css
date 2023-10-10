@@ -16,3 +16,21 @@
         background-color: purple;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    #wideScreen{
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #shortScreen{
+        background-color: yellow;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #tallScreen{
+        background-color: orange;
+    }
+}

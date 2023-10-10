@@ -38,10 +38,12 @@ body{
 }
 
 #box3{
-width: 73vw;
-height: 175vh;
-border-radius: 10px;
-background-color: orangered;
+    position: absolute;
+    top:0%;
+    width: 73vw;
+    height: 175vh;
+    border-radius: 10px;
+    background-color: orangered;
 }
 
 #text3 {
