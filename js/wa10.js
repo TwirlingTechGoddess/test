@@ -12,15 +12,15 @@ function randomValueFromArray(array){
 // 2. RAW TEXT STRINGS
 
 
-const insertX = ["Willy the Goblin",
-"Big Daddy",
-"Father Christmas"]
-const insertY = ["the soup kitchen",
-"Disneyland",
-"the White House"]
-const insertZ = ["spontaneously combusted",
-"melted into a puddle on the sidewalk",
-"turned into a slug and crawled away"]
+const insertX = ["BooBoo the Fool",
+"Big Daddy Kane",
+"Father Time"]
+const insertY = ["the YMCA",
+"XBar",
+"the strip club"]
+const insertZ = ["implodes",
+"crystalized into a pillar of salt",
+"gave a piglet a makeover"]
 
 
 // 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
@@ -28,6 +28,8 @@ const insertZ = ["spontaneously combusted",
 randomize.addEventListener('click', function () {
     if(customName.value){
         result();
+    } else {
+        alert("WRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!\nWRITE A NAME FOOL!!!");
     }
 }
 );
@@ -37,7 +39,7 @@ function result() {
     const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
     const xItem = randomValueFromArray(insertX);
-    const storyText = `It was 94 fahrenheit outside, so ${xItem} went for a walk. When they got to ${yItem}, they stared in horror for a few moments, then ${zItem}. Bob saw the whole thing, but was not surprised — ${xItem} weighs 300 pounds, and it was a hot day.`
+    const storyText = `It was 94 fahrenheit outside, so ${xItem} went to shake some ass. When they got to ${yItem}, they popped, locked, and dropped it for awhile, then ${zItem}. Bob saw the whole thing, but was not surprised — ${xItem} weighs 300 pounds, and it was a hot day in the deep south, so it's to be expected. "We Outsiiiiiiide!!!" Bob shouted, to which ${xItem} replied "You already KNOOOWWWWW!!!".`
     let newStory = storyText;
 // to make it dynamic on each button click I had to move variables into the function itself
 
