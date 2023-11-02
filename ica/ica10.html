@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Fancy letterheaded paper</title>
+        <link rel="stylesheet" href="../css/ica/ica6.css">
+        <script>
+            function myFunction1() {
+              document.getElementById('name').innerHTML = 'Title changed.';
+            }
+        </script>
+    </head>
+    <body>
+        <article>
+            <header>
+                <img src="../ica/img/top-image.png" alt="top image">
+            </header>
+            <h1 id=title>Awesome<br>Company</h1>
+            <form action="click" style= "position:relative; display: inline-flex;">
+                <label for="name">Try Function 1</label>
+                <input type=”button” name="name" onclick='myFunction1()' style= "cursor: pointer; position:relative; display: inline-flex;">
+                <label for="title">Try Function 2</label>
+                <input type=”button” name="title" onclick=”myFunction2()” style= "cursor: pointer; position:relative; display: inline-flex;">
+            </form>
+            <address>
+                <p id="name">The Awesome Company</p>
+                <p>102-112 Frail Bend Bridge<br>
+                The Dwindlings<br>
+                Little Hornet<br>
+                HX3 9ZQ<br>
+                UK</p>
+            </address>
+            <script>
+                function myFunction2() {
+                    console.log("gotem")
+                    document.getElementById('title').innerHTML = 'Title changed.';
+                }
+            </script>
+            <footer>
+                <img src="../ica/img/bottom-image.png" alt="bottom image">
+            </footer>
+        </article>
+    </body>
+</html>
