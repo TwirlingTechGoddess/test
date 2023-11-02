@@ -5,11 +5,6 @@
         <meta name="viewport" content="width=device-width">
         <title>Fancy letterheaded paper</title>
         <link rel="stylesheet" href="../css/ica/ica6.css">
-        <script>
-            function myFunction1() {
-              document.getElementById('name').innerHTML = 'Title changed.';
-            }
-        </script>
     </head>
     <body>
         <article>
@@ -32,8 +27,12 @@
                 UK</p>
             </address>
             <script>
+                function myFunction1() {
+                    console.log("got 1");
+                    document.getElementById('name').innerHTML = 'Name changed.';
+                }
                 function myFunction2() {
-                    console.log("gotem")
+                    console.log("got 2");
                     document.getElementById('title').innerHTML = 'Title changed.';
                 }
             </script>
