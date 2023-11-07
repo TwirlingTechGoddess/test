@@ -17,7 +17,7 @@ function random2(number) {
 
 function draw() {
     console.log("TEST");
-    ctx.clearRect(0,0, canvas.width, canvas.height); // if you want circles to disappear each time
+    // ctx.clearRect(0,0, canvas.width, canvas.height); // if you want circles to disappear each time
     for(let i = 0; i < 25; i++){
         ctx.beginPath();
         let red = random(255);
@@ -29,9 +29,9 @@ function draw() {
         ctx.arc(
             random(canvas.width),
             random(canvas.height),
-            random(150),
+            random(100),
             0,
-            2 * Math.PI
+            100 * Math.PI
         );
         ctx.fill();
     }
