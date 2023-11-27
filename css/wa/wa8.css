@@ -2,7 +2,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blanchedalmond;
+    background-color: rgb(233, 205, 246);
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(89, 89, 235) 1px 1px 1px;
+    text-shadow: violet 2px 2px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav{
     height: 50vh;
@@ -10,27 +14,52 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     height:20px;
-    background-color: blueviolet;
+    background-color: rgb(192, 131, 250);
 }
 nav a{
     width:10vw;
     text-align: center;
     text-decoration: none;
-    color:black;
+}
+
+nav a:hover {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
 }
 
 
 img{
     width:30vw;
-    height: 30vh;
 }
 
 #red-ball{
-    background-color: crimson;
+    margin-top: 25px;
+    background-color: rgb(93, 0, 136);
     width: 20px;
     height:20px;
     border-radius: 50%;
-    position: absolute;
-    left:5vw;
-    top:0;
+    bottom:0;
+    transition: transform 2500ms, opacity 4000ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span {
+    font-size: 4px;
+    opacity: 0;
+}
+
+#red-ball:hover{
+    background-image: url('../../wa/img/wa8/redBall.png');
+    transform: scale(30);
+    opacity: 0.5;
+}
+
+span:hover {
+    opacity: 1;
+    cursor: pointer;
 }
