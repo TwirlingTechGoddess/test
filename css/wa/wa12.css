@@ -22,6 +22,7 @@ html {
     transform: translate(-50%, -50%);
     width: 600px;
     background-color: #4A2B0F;
+    opacity: .85;
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
   }
@@ -33,6 +34,19 @@ html {
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid #ebebeb;
+  }
+
+  footer {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;    
+    background-color: #4A2B0F;
+    opacity: .75;
   }
   
   .quotes {
