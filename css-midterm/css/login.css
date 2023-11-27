@@ -64,9 +64,13 @@ article button {
     width: 100px;
     border-radius: 10%;
     background-color: maroon;
-    color: wheat;
     font-size: large;
     text-shadow: rgb(80, 0, 0) 2px 2px 3px;
+}
+
+article button a {
+    text-decoration: none;
+    color: wheat;
 }
 
 article button:hover {
