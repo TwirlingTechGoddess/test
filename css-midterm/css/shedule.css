@@ -96,15 +96,9 @@ section button {
 
 section button:hover {
     box-shadow:rgb(80, 0, 0) 1px 1px 1px;
-
-}
-/* 
-
-section li:hover {
-    transform: scale(10);
+    cursor: pointer;
 }
 
-}*/
 section p:hover{
     cursor: all-scroll; 
 }
@@ -112,7 +106,7 @@ section p:hover{
 footer {
     color: rgb(80, 0, 0) 1px 1px 1px;
     position: relative;
-    bottom: 0px;
+    bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,8 +119,21 @@ footer aside {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 500px) and (orientation: landscape) {
+@media screen and (max-width: 500px) and (orientation: portrait) {
     nav {
         position: sticky; top: 0;
     }
+
+    section h2 {
+        font-size: larger;
+    }
+
+    section p {
+        height: 250px;
+        width: 60%;
+    }
+    section button {
+        height: 200px;
+    }
+
 }
