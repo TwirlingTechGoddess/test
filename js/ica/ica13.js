@@ -66,13 +66,13 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 10) {
-    const size = random(5, 50);
+while (balls.length < 100) {
+    const size = random(10, 75);
     const ball = new Ball(
         random(0+size, width-size),
         random(0+size, height-size),
         random(-5,25),
-        random(-5,25),
+        random(-15,30),
         randomRGB(),
         size
     )
@@ -86,9 +86,8 @@ function loop() {
     for (const ball of balls) {
         ball.draw();
         ball.update();
-        ball.collisionDetect();
+        // ball.collisionDetect();
     }
-
     requestAnimationFrame(loop);
 }
 
