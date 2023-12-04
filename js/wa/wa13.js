@@ -1,9 +1,9 @@
 // Create JSON for each employee
 
-function employeeJSON() {
-    fetch('ica14.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+async function  employeeJSON() {
+    const response = await fetch('wa13.json');
+    const result = await response.json();
+    console.log(result);
 }
 
 // Create JSON for the company
@@ -39,3 +39,5 @@ function updateSalary() {
 function addProperty() {
     
 }
+
+employeeJSON();
