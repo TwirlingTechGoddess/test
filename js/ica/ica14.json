@@ -5,6 +5,7 @@
         {"firstname": "Bill", "department": "HR", "designation": "Executive", "salary": 21200, "raise eligible": false}
     ],
     "company": [
-        {}
-    ]
+        {"companyName": "Tech Stars", "website": "www.techstars.site", "employees": ["Sam", "Mary", "Bill"]}
+    ],
+    ""
 }
