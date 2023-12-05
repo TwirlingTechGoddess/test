@@ -46,7 +46,11 @@ function addEmployee(newEmployee) {
 // Calculate total salary for employees
 
 function calculateSalary() {
-    console.log();
+    console.log("Problem 4: ");
+    const totalSalary = employees.reduce(  (accumulator, currentValue) => {
+        accumulator + currentValue
+    ,0});
+    console.log(totalSalary);
 }
 
 
