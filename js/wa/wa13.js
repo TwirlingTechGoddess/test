@@ -22,7 +22,10 @@ function  employeeJSON() {
 // Create JSON for the company
 
 function companyJSON() {
-
+    console.log("Problem 2: ")
+    employees.forEach(company => {
+        console.log(company);
+    })
 }
 
 
