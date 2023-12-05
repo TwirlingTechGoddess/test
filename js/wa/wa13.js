@@ -13,7 +13,7 @@ let newEmployees = [
     {"firstname": "Anna", "department": "Tech", "designation": "Executive", "salary": 25600, "raise eligible": false}
 ];
 
-
+let wfh= ['Anna', 'Sam']
 
 
 // Create JSON for each employee
@@ -75,7 +75,16 @@ function updateSalary() {
 // Add a property called 'wfh' to employees
 
 function addProperty() {
-    console.log("Problem 6: ");    
+    console.log("Problem 6: ");  
+    employees.forEach(employee => {
+        employee["wfh"] = false;
+        wfh.forEach(human => {
+            if(employee.firstname === human){
+                employee["wfh"] = true;
+            }
+        })
+        console.log(employee);
+    })  
 }
 
 employeeJSON();
