@@ -9,9 +9,21 @@
 <body>
   <div class="game-container">
     <h1>Enter Your Phone Number Punk</h1>
+    <br>
     <form id="phoneForm">
       <label for="phone">GOOD LUCK:</label>
-      <input type="text" id="phone" maxlength="20" placeholder="number goes here,... duh">
+      <input type="button" id="1st" placeholder="number goes here,... duh" value="1" onclick="addNumber(event)">
+      <input type="button" id="2st" placeholder="number goes here,... duh" value="2" onclick="addNumber(event)">
+      <input type="button" id="3st" placeholder="number goes here,... duh" value="3" onclick="addNumber(event)">
+      <input type="button" id="4st" placeholder="number goes here,... duh" value="4" onclick="addNumber(event)">
+      <input type="button" id="5st" placeholder="number goes here,... duh" value="5" onclick="addNumber(event)">
+      <input type="button" id="6st" placeholder="number goes here,... duh" value="6" onclick="addNumber(event)">
+      <input type="button" id="7st" placeholder="number goes here,... duh" value="7" onclick="addNumber(event)">
+      <input type="button" id="8st" placeholder="number goes here,... duh" value="8" onclick="addNumber(event)">
+      <input type="button" id="9st" placeholder="number goes here,... duh" value="9" onclick="addNumber(event)">
+      <input type="button" id="10st" placeholder="number goes here,... duh" value="10" onclick="addNumber(event)">
+      <h2></h2>
+      <br>
       <button type="button" onclick="submitPhoneNumber()">Submit</button>
     </form>
     <p id="result"></p>

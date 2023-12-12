@@ -6,6 +6,19 @@ body {
   padding: 0;
 }
 
+h2 {
+  padding: 10px;
+}
+
+input {
+  position: relative;
+  top: 0;
+  transition: top ease 0.025s;
+}
+input:hover {
+  top: 100px;
+}
+
 .game-container {
   background-color: #66b2ff;
   padding: 20px;

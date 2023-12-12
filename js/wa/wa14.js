@@ -1,3 +1,5 @@
+const numbers = document.querySelector("h2");
+
 function submitPhoneNumber() {
     const phoneNumber = document.getElementById('phone').value;
     const resultElement = document.getElementById('result');
@@ -12,3 +14,7 @@ function submitPhoneNumber() {
     }
   }
   
+  function addNumber(event) {
+    console.log(event.target.value);
+    numbers.textContent += event.target.value;
+  }
