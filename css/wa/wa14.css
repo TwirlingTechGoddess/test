@@ -34,12 +34,16 @@ label {
 input {
   padding: 8px;
   font-size: 16px;
+  background-color: lightpink;
+  color: #07315a;
 }
 
 button {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  background-color: rgb(248, 219, 180);
+  color: #0a4580;
 }
 
 button:hover {
