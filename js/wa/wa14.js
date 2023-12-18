@@ -1,20 +1,29 @@
-const numbers = document.querySelector("h2");
+const numbers = document.querySelector("h2");    
+const buTT = document.querySelector("button");    
+const resultElement = document.getElementById('result');
 
 function submitPhoneNumber() {
-    const phoneNumber = document.getElementById('phone').value;
-    const resultElement = document.getElementById('result');
+    window.close();
+}
+
   
-    const isValidPhoneNumber = /^\d{3}-\d{3}-\d{4}$/.test(phoneNumber);
-  
-    if (isValidPhoneNumber) {
-      window.close();
-    } else {
-      resultElement.style.color = 'red';
-      resultElement.textContent = 'Oops! That doesn\'t look like a valid phone number. Try again!';
-    }
+function addNumber(event) {
+  console.log(numbers.innerText);
+  console.log(Number(numbers.innerText));
+  numbers.textContent += event.target.value;
+  if(numbers.innerText.length === 10) {
+    buTT.disabled = false;
+  } else {
+    buTT.disabled = true;
   }
-  
-  function addNumber(event) {
-    console.log(event.target.value);
-    numbers.textContent += event.target.value;
+}
+
+function deleteNumber() {
+  const numm = numbers.innerText.split('').slice(0, numbers.innerText.length-1).join('');
+  numbers.textContent = numm;
+  if(numbers.innerText.length === 10) {
+    buTT.disabled = false;
+  } else {
+    buTT.disabled = true;
   }
+}

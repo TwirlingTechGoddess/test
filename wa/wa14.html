@@ -11,7 +11,7 @@
     <h1>Enter Your Phone Number Punk</h1>
     <br>
     <form id="phoneForm">
-      <label for="phone">GOOD LUCK:</label>
+      <p for="phone">Enter number without dashes: "1234567890"</p>
       <input type="button" id="1st" placeholder="number goes here,... duh" value="1" onclick="addNumber(event)">
       <input type="button" id="2st" placeholder="number goes here,... duh" value="2" onclick="addNumber(event)">
       <input type="button" id="3st" placeholder="number goes here,... duh" value="3" onclick="addNumber(event)">
@@ -21,10 +21,11 @@
       <input type="button" id="7st" placeholder="number goes here,... duh" value="7" onclick="addNumber(event)">
       <input type="button" id="8st" placeholder="number goes here,... duh" value="8" onclick="addNumber(event)">
       <input type="button" id="9st" placeholder="number goes here,... duh" value="9" onclick="addNumber(event)">
-      <input type="button" id="10st" placeholder="number goes here,... duh" value="10" onclick="addNumber(event)">
+      <input type="button" id="0st" placeholder="number goes here,... duh" value="0" onclick="addNumber(event)">
       <h2></h2>
       <br>
-      <button type="button" onclick="submitPhoneNumber()">Submit</button>
+      <button disabled="true" type="button" onclick="submitPhoneNumber()">Submit</button>
+      <button type="button" onclick="deleteNumber()">Delete</button>
     </form>
     <p id="result"></p>
   </div>
